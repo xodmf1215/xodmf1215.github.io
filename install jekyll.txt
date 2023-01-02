@@ -1,0 +1,14 @@
+1. 루비 설치
+2. 지킬 및 번들러 설치
+(--source 부분은 ssl 인증서 안되는 곳에서)
+gem install bundler --source http://rubygems.org
+gem install jekyll --source http://rubygems.org
+
+번들러 config update
+(ssl 인증서 안되서 미러 등록)
+bundle config set --global mirror.https://rubygems.org
+
+
+로컬서버에서 실행
+jekyll 파일 있는 디렉토리로 이동
+bundle exec jekyll serve
